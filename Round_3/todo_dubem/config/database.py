@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017") # Connection string for MongoDB Compass
+uri = "mongodb+srv://dubi:AQj6vBgOwygi4f3F@cluster0.zjnpth7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+client = MongoClient(uri) # Connection string for MongoDB
 
 db = client.todo_db
 
